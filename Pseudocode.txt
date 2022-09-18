@@ -33,3 +33,8 @@ Begin
 
 			Eject nMoney;
 End
+
+#Menu
+STORE "cProd" AS CHARACTER WITH "Coke" , "Coffee" , "Milk" , "Lemon Tea" , "Milk Tea" , "Mineral Watrer"
+STORE "nStock" AS NUMBER WITH Stock Product from 0-25
+STORE "cKey" AS CHARACTER WITH "Y"
