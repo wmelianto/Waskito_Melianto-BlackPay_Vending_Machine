@@ -12,3 +12,24 @@ Begin
 	Display "Your money is" nMoney;
 	Call Menu;
 	Call ProductPrice;
+    	
+	If (nMoney >= nPrice)
+		Display "Enjoy your drink";
+	Else
+		Display "Not enough money. Do you want to add money? [Y//N]";
+		Accept cKey4;
+		
+		If (cKey4 == NULL for 7s)
+			Display "Do you want to continue? [Y//N];
+			Accept cKey5;
+		Else If (cKey5=="Y")
+				Call Main;
+				
+			Eject nMoney;
+				
+		Else If (cKey4 =="Y")
+				Accept nMoneyPlus
+				nMoney + nMoneyPlus = nMoney;
+
+			Eject nMoney;
+End
