@@ -6,6 +6,3 @@ Vending machine ini digunakan untuk membeli minuman dingin dengan harga bervaria
 - Flowchart.PNG
 - README.MD
 - Pseudocode.txt
-
-Dikerjakan oleh :
-- `Waskito Melianto - BE3135034`
