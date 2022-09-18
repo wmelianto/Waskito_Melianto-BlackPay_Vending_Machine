@@ -73,3 +73,7 @@ Begin
 				
 			Eject nMoney;
 End
+
+#ProductPrice
+STORE "nPrice" AS NUMBER WITH 4000 , 5000 , 6000 , 7000 , 10000
+STORE "cProd" AS NUMBER FROM 1 TO 6
