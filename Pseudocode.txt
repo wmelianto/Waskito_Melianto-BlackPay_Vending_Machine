@@ -38,3 +38,15 @@ End
 STORE "cProd" AS CHARACTER WITH "Coke" , "Coffee" , "Milk" , "Lemon Tea" , "Milk Tea" , "Mineral Watrer"
 STORE "nStock" AS NUMBER WITH Stock Product from 0-25
 STORE "cKey" AS CHARACTER WITH "Y"
+
+Begin
+	Display "Choose your drink "
+	"1. Coke
+	2. Coffee
+	3. Millk
+	4. Lemon Tea
+	5. Milk Tea
+	6. Mineral Water"
+	
+	Accept cProd;
+	
