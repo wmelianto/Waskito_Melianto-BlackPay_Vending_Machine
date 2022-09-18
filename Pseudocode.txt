@@ -49,4 +49,27 @@ Begin
 	6. Mineral Water"
 	
 	Accept cProd;
-	
+
+	If (cProd stock > 0)
+		Call ProductPrice;
+		
+		Else If (cProd == NULL for 7s)
+			Display "Do you want to continue? (Y/N)"
+			Accept cKey3;
+			Return;
+		Else
+			Eject nMoney;
+			
+	Else
+		Display "Sorry, we're out of stock please choose another drink (Y/N)";
+		Accept cKey1
+		
+		If (cKey1 == NULL for 7s)
+			Display "Sorry, we're out of stock please choose another drink (Y/N)";
+			Accept cKey2;
+			Return
+		Else If (cKey1 == "Y")
+				Accept cProd;
+				
+			Eject nMoney;
+End
