@@ -77,3 +77,17 @@ End
 #ProductPrice
 STORE "nPrice" AS NUMBER WITH 4000 , 5000 , 6000 , 7000 , 10000
 STORE "cProd" AS NUMBER FROM 1 TO 6
+Begin
+	If (cProd == 1)
+		nPrice = 7000;
+	Else if (cProd == 2)
+		nPrice = 6000;
+	Else if (cProd == 3)
+		nPrice = 5000;
+	Else if (cProd == 4)
+		nPrice = 4000;
+	Else if (cProd == 5
+		nPrice 10000;
+	Else
+		nPrice = 4000;
+End
