@@ -1,0 +1,93 @@
+STORE "nMoney" AS NUMBER WITH Rupiah Value
+STORE "nMoneyPlus" AS NUMBER WITH Rupiah Value
+STORE "cKey" AS CHARACTER WITH "Y"
+STORE "nPrice" AS NUMBER WITH 4000 , 5000 , 6000 , 7000 , 10000
+
+#Welcome and Main
+Begin
+	Display "******WELCOME*******
+		 Please insert your money";
+	
+	Accept nMoney;
+	Display "Your money is" nMoney;
+	Call Menu;
+	Call ProductPrice;
+    	
+	If (nMoney >= nPrice)
+		Display "Enjoy your drink";
+	Else
+		Display "Not enough money. Do you want to add money? [Y//N]";
+		Accept cKey4;
+		
+		If (cKey4 == NULL for 7s)
+			Display "Do you want to continue? [Y//N];
+			Accept cKey5;
+		Else If (cKey5=="Y")
+				Call Main;
+				
+			Eject nMoney;
+				
+		Else If (cKey4 =="Y")
+				Accept nMoneyPlus
+				nMoney + nMoneyPlus = nMoney;
+
+			Eject nMoney;
+End
+
+#Menu
+STORE "cProd" AS CHARACTER WITH "Coke" , "Coffee" , "Milk" , "Lemon Tea" , "Milk Tea" , "Mineral Watrer"
+STORE "nStock" AS NUMBER WITH Stock Product from 0-25
+STORE "cKey" AS CHARACTER WITH "Y"
+
+Begin
+	Display "Choose your drink "
+	"1. Coke
+	2. Coffee
+	3. Millk
+	4. Lemon Tea
+	5. Milk Tea
+	6. Mineral Water"
+	
+	Accept cProd;
+
+	If (cProd stock > 0)
+		Call ProductPrice;
+		
+		Else If (cProd == NULL for 7s)
+			Display "Do you want to continue? (Y/N)"
+			Accept cKey3;
+			Return;
+		Else
+			Eject nMoney;
+			
+	Else
+		Display "Sorry, we're out of stock please choose another drink (Y/N)";
+		Accept cKey1
+		
+		If (cKey1 == NULL for 7s)
+			Display "Sorry, we're out of stock please choose another drink (Y/N)";
+			Accept cKey2;
+			Return
+		Else If (cKey1 == "Y")
+				Accept cProd;
+				
+			Eject nMoney;
+End
+
+#ProductPrice
+STORE "nPrice" AS NUMBER WITH 4000 , 5000 , 6000 , 7000 , 10000
+STORE "cProd" AS NUMBER FROM 1 TO 6
+Begin
+	If (cProd == 1)
+		nPrice = 7000;
+	Else if (cProd == 2)
+		nPrice = 6000;
+	Else if (cProd == 3)
+		nPrice = 5000;
+	Else if (cProd == 4)
+		nPrice = 4000;
+	Else if (cProd == 5
+		nPrice 10000;
+	Else
+		nPrice = 4000;
+End
