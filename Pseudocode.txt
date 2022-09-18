@@ -2,3 +2,13 @@ STORE "nMoney" AS NUMBER WITH Rupiah Value
 STORE "nMoneyPlus" AS NUMBER WITH Rupiah Value
 STORE "cKey" AS CHARACTER WITH "Y"
 STORE "nPrice" AS NUMBER WITH 4000 , 5000 , 6000 , 7000 , 10000
+
+#Welcome and Main
+Begin
+	Display "******WELCOME*******
+		 Please insert your money";
+	
+	Accept nMoney;
+	Display "Your money is" nMoney;
+	Call Menu;
+	Call ProductPrice;
